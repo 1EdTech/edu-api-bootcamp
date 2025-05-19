@@ -21,7 +21,7 @@
     "x-oas-operation-count" : 49
   },
   "servers" : [ {
-    "url" : "https://example.org/ims/eduapi/base/v1p0",
+    "url" : "http://host.docker.internal:8080/ims/eduapi/base/v1p0",
     "description" : "The above Server URL should be changed to the actual server location."
   } ],
   "tags" : [ {
@@ -8944,7 +8944,7 @@
         "type" : "oauth2",
         "flows" : {
           "clientCredentials" : {
-            "tokenUrl" : "https://www.example.com/eduapi/ccg/token/",
+            "tokenUrl" : "http://host.docker.internal:8080/oauth2/token",
             "scopes" : {
               "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly" : "Default read-only scope. Enables access to all GET operations except those in PersonManagement",
               "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly.privacy" : "Enables access to all GET operations in PersonManagement"
