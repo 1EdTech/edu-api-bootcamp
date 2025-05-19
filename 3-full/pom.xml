@@ -83,7 +83,7 @@
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <!-- <generateSupportingFiles>false</generateSupportingFiles> -->
                             <configOptions>
-                                <!-- <delegatePattern>true</delegatePattern> -->
+                                <delegatePattern>true</delegatePattern>
                                 <generateBuilders>true</generateBuilders>
                                 <openApiNullable>false</openApiNullable>
                                 <useSpringBoot3>true</useSpringBoot3>
