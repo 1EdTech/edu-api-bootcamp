@@ -14,7 +14,8 @@ spring:
               authorization-grant-types:
                 - client_credentials
               scopes:
-                - read
+                - "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly"
+                - "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly.privacy"
       resourceserver:
         jwt:
           issuer-uri: http://localhost:${server.port:8080}

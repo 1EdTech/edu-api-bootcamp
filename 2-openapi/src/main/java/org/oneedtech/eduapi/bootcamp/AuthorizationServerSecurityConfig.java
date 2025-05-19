@@ -34,7 +34,7 @@ public class AuthorizationServerSecurityConfig {
   }
 
   /**
-   * Require login for all requests not in "/hello/**"
+   * Require login for all requests not in "/ims/**"
    * @param http
    * @return
    * @throws Exception
@@ -44,7 +44,7 @@ public class AuthorizationServerSecurityConfig {
   SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
     http.authorizeHttpRequests(authorizeRequests ->
       authorizeRequests
-        .requestMatchers("/hello/**").permitAll()
+        .requestMatchers("/ims/**").permitAll()
         .anyRequest().authenticated()
     )
     .formLogin(withDefaults());
