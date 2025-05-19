@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        issuer: http://localhost:${server.port:8080} # set to the deployed server URL
+        client:
+          edu-api-client:
+            registration:
+              client-id: edu-api-client
+              client-secret: "{noop}secret"
+              client-name: Edu API Client
+              client-authentication-methods:
+                - client_secret_basic
+              authorization-grant-types:
+                - client_credentials
+              scopes:
+                - "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly"
+                - "http://purl.1edtech.org/spec/eduapi/v1p0/scope/core.readonly.privacy"
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:${server.port:8080}
