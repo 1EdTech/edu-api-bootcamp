@@ -19,3 +19,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:${server.port:8080}
+
+# strip nulls in jackson serialization
+  jackson:
+    default-property-inclusion: NON_NULL
