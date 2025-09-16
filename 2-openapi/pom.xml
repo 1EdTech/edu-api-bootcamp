@@ -89,12 +89,64 @@
                             <modelPackage>org.oneedtech.eduapi.bootcamp.model</modelPackage>
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <!-- <generateSupportingFiles>false</generateSupportingFiles> -->
+                            <openapiNormalizer>
+                                SIMPLIFY_ANYOF_STRING_AND_ENUM_BRANCH=true,SIMPLIFY_ONEOF_ANYOF=true
+                            </openapiNormalizer>
+                            <typeMappings>
+                                <typeMapping>Education_level=String</typeMapping>
+                                <typeMapping>Education_creditType=String</typeMapping>
+                                <typeMapping>CollectionTemplate_collectionType=String</typeMapping>
+                                <typeMapping>CollectionTemplate_level=String</typeMapping>
+                                <typeMapping>CollectionTemplate_creditType=String</typeMapping>
+                                <typeMapping>ComponentTemplate_componentType=String</typeMapping>
+                                <typeMapping>ComponentTemplate_level=String</typeMapping>
+                                <typeMapping>ComponentTemplate_creditType=String</typeMapping>
+                                <typeMapping>CourseTemplate_courseType=String</typeMapping>
+                                <typeMapping>CourseTemplate_level=String</typeMapping>
+                                <typeMapping>CourseTemplate_creditType=String</typeMapping>
+                                <typeMapping>EducationOffering_offeringType=String</typeMapping>
+                                <typeMapping>EducationOffering_offeringFormat=String</typeMapping>
+                                <typeMapping>EducationOffering_synchronicity=String</typeMapping>
+                                <typeMapping>CollectionOffering_offeringType=String</typeMapping>
+                                <typeMapping>CollectionOffering_offeringFormat=String</typeMapping>
+                                <typeMapping>CollectionOffering_synchronicity=String</typeMapping>
+                                <typeMapping>ComponentOffering_offeringType=String</typeMapping>
+                                <typeMapping>ComponentOffering_offeringFormat=String</typeMapping>
+                                <typeMapping>ComponentOffering_synchronicity=String</typeMapping>
+                                <typeMapping>CourseOffering_offeringType=String</typeMapping>
+                                <typeMapping>CourseOffering_offeringFormat=String</typeMapping>
+                                <typeMapping>CourseOffering_synchronicity=String</typeMapping>
+                                <typeMapping>AcademicSession_sessionType=String</typeMapping>
+                                <typeMapping>RoleEnablement_role=String</typeMapping>
+                                <typeMapping>Enrollment_role=String</typeMapping>
+                                <typeMapping>Enrollment_offeringType=String</typeMapping>
+                                <typeMapping>Enrollment_enrollmentStatus=String</typeMapping>
+                                <typeMapping>Affiliation_role=String</typeMapping>
+                                <typeMapping>Affiliation_affiliationStatus=String</typeMapping>
+                                <typeMapping>Person_gender=String</typeMapping>
+                                <typeMapping>Agents_agentType=String</typeMapping>
+                                <typeMapping>PersonNameEntry_nameType=String</typeMapping>
+                                <typeMapping>IdentifierEntry_identifierType=String</typeMapping>
+                                <typeMapping>TypedAddress_addressType=String</typeMapping>
+                                <typeMapping>OptionallyTypedAddress_addressType=String</typeMapping>
+                                <typeMapping>TypedEmail_emailType=String</typeMapping>
+                                <typeMapping>OptionallyTypedEmail_emailType=String</typeMapping>
+                                <typeMapping>TypedPhone_phoneType=String</typeMapping>
+                                <typeMapping>OptionallyTypedPhone_phoneType=String</typeMapping>
+                            </typeMappings>
+                            <globalProperties>
+                                <globalProperty>models</globalProperty>
+                                <globalProperty>apis</globalProperty>
+                            </globalProperties>
                             <configOptions>
                                 <!-- <delegatePattern>true</delegatePattern> -->
                                 <generateBuilders>true</generateBuilders>
                                 <openApiNullable>false</openApiNullable>
                                 <useSpringBoot3>true</useSpringBoot3>
                                 <useSwaggerUI>false</useSwaggerUI>
+                                <enumPropertyNaming>legacy</enumPropertyNaming>
+                                <legacyDiscriminatorBehavior>false</legacyDiscriminatorBehavior>
+                                <disallowAdditionalPropertiesIfNotPresent>false</disallowAdditionalPropertiesIfNotPresent>
                             </configOptions>
                         </configuration>
                     </execution>
