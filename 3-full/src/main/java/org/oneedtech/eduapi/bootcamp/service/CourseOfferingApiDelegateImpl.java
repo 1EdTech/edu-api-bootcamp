@@ -1,8 +1,6 @@
 package org.oneedtech.eduapi.bootcamp.service;
 
-import java.time.Instant;
 import java.time.OffsetDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -10,22 +8,18 @@ import java.util.stream.IntStream;
 
 import org.oneedtech.eduapi.bootcamp.api.CourseOfferingsApiDelegate;
 import org.oneedtech.eduapi.bootcamp.model.CourseOffering;
-import org.oneedtech.eduapi.bootcamp.model.CourseOfferingOfferingType;
-import org.oneedtech.eduapi.bootcamp.model.IdentifierEntry;
-import org.oneedtech.eduapi.bootcamp.model.LanguageTypedString;
-import org.oneedtech.eduapi.bootcamp.model.OptionallyTypedAddress;
-import org.oneedtech.eduapi.bootcamp.model.OptionallyTypedPhone;
-import org.oneedtech.eduapi.bootcamp.model.Person;
-import org.oneedtech.eduapi.bootcamp.model.PersonName;
 import org.oneedtech.eduapi.bootcamp.model.CourseOffering.RecordStatusEnum;
 import org.oneedtech.eduapi.bootcamp.model.CourseOffering.RegistrationStatusEnum;
-import org.oneedtech.eduapi.bootcamp.model.CourseOfferingOfferingFormat;
+import org.oneedtech.eduapi.bootcamp.model.IdentifierEntry;
+import org.oneedtech.eduapi.bootcamp.model.LanguageTypedString;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
 import com.github.javafaker.Faker;
 
 import jakarta.annotation.PostConstruct;
 
+@Component
 public class CourseOfferingApiDelegateImpl implements CourseOfferingsApiDelegate {
   private List<CourseOffering> courseOfferings;
   private Integer COURSE_OFFERING_COUNT = 50;
