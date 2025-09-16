@@ -22,4 +22,4 @@ spring:
 
 # strip nulls in jackson serialization
   jackson:
-    default-property-inclusion: NON_NULL
+    default-property-inclusion: NON_EMPTY
